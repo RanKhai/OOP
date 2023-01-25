@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "oop"
+version = "0.1.0"
+description = ""
+authors = ["Ranis"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.scripts]
+test_non_oop = "oop.structured.test:test"
+test_oop = "oop.true.test:test"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
